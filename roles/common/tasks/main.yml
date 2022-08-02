@@ -1,6 +1,7 @@
 ---
 - name: Install libselinux-python
   yum: name=libselinux-python state=present
+  tags: install_libselinux_python
 
 - name: Reload ansible_facts
   setup:
